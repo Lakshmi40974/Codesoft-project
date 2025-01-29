@@ -1,0 +1,96 @@
+/* Custom styles on top of Bootstrap */
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-card {
+background-color: #7b6677;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(44, 17, 17, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius:10 px;
+}
+
+.project-card h3 {
+  margin: 10px 0;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #692929;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+  background: #007BFF;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.project-card a:hover {
+  background: #07509e;
+}
+
+
+.skill-icon {
+  font-size: 2.5rem;
+  margin: 1rem;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: var(--bs-primary) !important;
+}
+
+/* Custom section padding */
+section {
+  padding: 5rem 0;
+}
+
+/* Smooth scroll offset for fixed header */
+html {
+  scroll-padding-top: 80px;
+}
